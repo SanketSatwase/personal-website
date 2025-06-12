@@ -1,0 +1,135 @@
+body {
+    margin: 0px;
+    color: #FFD700;
+    font-family: "Averia Serif Libre", serif;
+    min-width: 578px;
+}
+
+.top-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: #332D56;
+    font-size: 1.5rem;
+    padding-bottom: 55px;
+    gap: 20px;
+}
+
+.middle-container {
+    display: grid;
+    grid-template-rows: 0.3fr 0.4fr 1fr 0.8fr;
+    grid-template-columns: 1fr 1fr;
+    background-color: #4E6688;
+}
+
+.middle-container > div {
+    border: 5px solid;
+    letter-spacing: 1px;
+}
+
+.bottom-container {
+    display: flex;
+    flex-direction: column;
+    background-color: #71C0BB;
+    height: 25vh;
+    justify-content: space-around;
+    align-items: center;
+}
+
+a {
+    color: #332D56;
+    background-color: antiquewhite;
+    padding: 10px;
+    border: 2px solid #332D56;
+    border-radius: 25px;
+    text-decoration: none;
+}
+
+h1 {
+    margin: 0px;
+    text-align: center;
+    font-family: "Averia Serif Libre", serif;
+    font-size: 6rem;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h2 {
+    font-size: 3rem;
+    text-align: center;
+}
+
+h3 {
+    font-family: "Averia Serif Libre", serif;
+    font-size: 1.5rem;
+    color: #FFD700;
+}
+
+ul, li, p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #E3EEB2;
+}
+
+li {
+    margin-block:10px;
+}
+
+span {
+    font-weight: bold;
+    color: #a9ff66;
+}
+
+#carouselExampleIndicators {
+    grid-column: span 2;
+}
+
+#carouselExampleRide {
+    grid-column: span 2;
+}
+
+#carouselExampleIndicators ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+#carouselExampleRide ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.work-exp {
+    grid-column: span 2;
+}
+.work-exp-flex {
+    display: flex;
+}
+
+.contact-me {
+    grid-column: span 2;
+    align-content: center;
+    text-align: center;
+}
+
+.btn {
+    background-color: #71C0BB;
+    color: #E3EEB2;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 576px) {
+    .top-container #desk-image {
+        width: 80%;
+    }
+
+    .work-exp-flex {
+        flex-direction: column;
+    }
+
+    ul {
+        flex-direction: column;
+    } 
+}
